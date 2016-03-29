@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bootstrap Admin</title>
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css">
+        <script src="lib/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheets/theme.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/premium.css">
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        <!--[if lt IE 7 ]> <body class="ie ie6"> <![endif]-->
+        <!--[if IE 7 ]> <body class="ie ie7 "> <![endif]-->
+        <!--[if IE 8 ]> <body class="ie ie8 "> <![endif]-->
+        <!--[if IE 9 ]> <body class="ie ie9 "> <![endif]-->
+        <!--[if (gt IE 9)|!(IE)]><!--> 
+        
+        <!--<![endif]-->
+    </head>
+    <body class=" theme-blue">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="" href="index.html">
+                    <img src="../assets/images/logo.svg" style="background: white; padding: 15px 15px; width: 60%; margin: 2px 0 0 0;" />
+                </a>
+            </div>
+            <div class="navbar-collapse collapse" style="height: 1px;">
+                <ul id="main-menu" class="nav navbar-nav navbar-right">
+                    <li class="dropdown hidden-xs">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-user padding-right-small" style="position:relative;top: 3px;"></span>
+                            Admin
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a tabindex="-1" href="sign-in.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sidebar-nav">
+            <ul>
+                <li>
+                    <a href="index.php" class="nav-header">
+                        <div class="home">&nbsp;</div><br />
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="careers.html" class="nav-header">
+                        <div class="career">&nbsp;</div><br />
+                        Careers
+                    </a>
+                </li>
+                <li>
+                    <a href="contactus.html" class="nav-header">
+                        <div class="contact">&nbsp;</div><br />
+                        Contact Us
+                    </a>
+                </li>
+                <li>
+                    <a href="news.html" class="nav-header">
+                        <div class="news">&nbsp;</div><br />
+                        News
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="ourpeople.html" class="nav-header">
+                        <div class="user active_div">&nbsp;</div><br />
+                        Our People
+                    </a>
+                </li>
+                <li>
+                    <a href="ourideas.html" class="nav-header">
+                        <div class="ideas">&nbsp;</div><br />
+                        Our Ideas
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="main-content">
+                <div id="sociallinks"></div>
+            </div>
+        </div>
+        <script src="lib/bootstrap/js/bootstrap.js"></script>
+        <!-- Include one of jTable styles. -->
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+        <link href="jtable/themes/metro/blue/jtable.min.css" rel="stylesheet" type="text/css" />
+        <link href="http://jtable.org/Content/themes/metroblue/jquery-ui.css" rel="stylesheet" type="text/css" />
+        <!-- Include jTable script file. -->
+        <script src="jtable/jquery.jtable.js" type="text/javascript"></script>
+        <!--<![endif]-->
+        <link href="jtable/validationEngine.jquery.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="jtable/jquery.validationEngine.js"></script>
+        <script type="text/javascript" src="jtable/jquery.validationEngine-en.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#sociallinks').jtable({
+                    title: 'OUR PEOPLE',
+                    paging: true, //Enable paging
+                    pageSize: 8, //Set page size (default: 10)
+                    sorting: true, //Enable sorting
+                    defaultSorting: 'ID ASC', //Set default sorting
+                    actions: {
+                        listAction: 'include/ourpeople.php?id=load',
+                        createAction: 'include/ourpeople.php?id=add',
+                        updateAction: 'include/ourpeople.php?id=update',
+                        deleteAction: 'include/ourpeople.php?id=delete'
+                    },
+                    fields: {
+                        ID: {
+                            key: true,
+                            list: false
+                        },
+                        TYPE: {
+                            title: 'TYPE',
+                            edit: false,
+                            list: false,
+                            create: false,
+                            options: { '1': 'Our People', '2': 'Metacubians', '3':'Both' }
+                        },
+                        NAME: {
+                            title: 'NAME',
+                            list: true,
+                            width: '5%'
+                        },
+                        DESIGNATION: {
+                            title: 'DESIGNATION',
+                            list: true
+                        },
+                        DESCRIPTION: {
+                            title: 'DESCRIPTION',
+                            list: false,
+                            input: function (data) {
+                                if (data.record) {
+                                    return '<input type="text" name="DESCRIPTION" maxlength="80" value="' + data.record.DESCRIPTION + '" />';
+                                } else {
+                                    return '<input type="text" name="DESCRIPTION" maxlength="80" />';
+                                }
+                            }
+                        },
+                        LONG_DESCRIPTON: {
+                            title: 'LONG DESCRIPTON',
+                            type: 'textarea',
+                            list: false
+                        },
+                        EMAILID: {
+                            title: 'EMAILID',
+                            list: false
+                        },
+                        THUMB_IMAGE_PATH: {
+                            title: 'THUMB IMAGE PATH',
+                            list: false
+                        },
+                        BIG_IMAGE_PATH: {
+                            title: 'BIG IMAGE PATH',
+                            list: false
+                        },
+                        TWITTER: {
+                            title: 'TWITTER LINK',
+                            list: false
+                        },
+                        ACTIVE_TWITTER: {
+                            title: 'ACTIVE TWITTER',
+                            edit: false,
+                            list: false,
+                            create: false,
+                            options: { 'True': 'Active', 'False': 'In Active' }
+                        },
+                        FACEBOOK: {
+                            title: 'FACEBOOK LINK',
+                            list: false
+                        },
+                        ACTIVE_FACEBOOK: {
+                            title: 'ACTIVE FACEBOOK',
+                            edit: false,
+                            list: false,
+                            create: false,
+                            options: { 'True': 'Active', 'False': 'In Active' }
+                        },
+                        GOOGLEPLUS: {
+                            title: 'GOOGLEPLUS LINK',
+                            list: false
+                        },
+                        ACTIVE_GOOGLEPLUS: {
+                            title: 'ACTIVE GOOGLEPLUS',
+                            edit: false,
+                            list: false,
+                            create: false,
+                            options: { 'True': 'Active', 'False': 'In Active' }
+                        },
+                        INSTAGRAM: {
+                            title: 'INSTAGRAM LINK',
+                            list: false
+                        },
+                        ACTIVE_INSTAGRAM: {
+                            title: 'ACTIVE INSTAGRAM',
+                            edit: false,
+                            list: false,
+                            create: false,
+                            options: { 'True': 'Active', 'False': 'In Active' }
+                        },
+                        GLASSDOOR: {
+                            title: 'GLASSDOOR LINK',
+                            list: false
+                        },
+                        ACTIVE_GLASSDOOR: {
+                            title: 'ACTIVE GLASSDOOR',
+                            edit: false,
+                            list: false,
+                            create: false,
+                            options: { 'True': 'Active', 'False': 'In Active' }
+                        },
+                        LINKEDIN: {
+                            title: 'LINKEDIN LINK',
+                            list: false
+                        },
+                        ACTIVE_LINKEDIN: {
+                            title: 'ACTIVE LINKEDIN',
+                            edit: false,
+                            list: false,
+                            create: false,
+                            options: { 'True': 'Active', 'False': 'In Active' }
+                        },
+                        LOGDATE: {
+                            title: 'LOGDATE',
+                            edit: false,
+                            list: false,
+                            create: false
+                        },
+                        ACTIVE: {
+                            title: 'PUBLISH',
+                            list: false,
+                            create: true,
+                            options: { 'True': 'Active', 'False': 'In Active' }
+                        },
+                        IP: {
+                            title: 'IP',
+                            edit: false,
+                            list: false,
+                            create: false
+                        },
+                        FEATURED_PEOPLE: {
+                            title: 'FEATURED PEOPLE',
+                            create: false,
+                            edit: false,
+                            display: function (data) {
+                                var $link = $('<input class="chk" type="checkbox" name="featured" id="chk_fp_' + data.record.ID + '" onclick="showonhome(' + data.record.ID + ', \'fp\');" ' + data.record.FEATURED_PEOPLE + ' />');
+                                return $link;
+                            },
+                            width: '5%'
+                        },
+                        FEATURED_META: {
+                            title: 'FEATURED METACUBIAN',
+                            create: false,
+                            edit: false,
+                            display: function (data) {
+                                var $link = $('<input class="chk" type="checkbox" name="featured" id="chk_fm_' + data.record.ID + '" onclick="showonhome(' + data.record.ID + ', \'fm\');" ' + data.record.FEATURED_META + ' />');
+                                return $link;
+                            },
+                            width: '5%'
+                        },
+                        PEOPLE_RANK: {
+                            title: 'PEOPLE PRIORITY',
+                            create: false,
+                            edit: false,
+                            display: function (data) {
+                                var $link = $('<input value="' + data.record.PEOPLE_RANK + '" onchange="rank(' + data.record.ID + ', \'P\');" class="txt_rankP" type="text" style="width:50px;" name="featured" id="txt_rankP' + data.record.ID + '" />');
+                                return $link;
+                            },
+                            width: '5%'
+                        },
+                        META_RANK: {
+                            title: 'METACUBIAN PRIORITY',
+                            create: false,
+                            edit: false,
+                            display: function (data) {
+                                var $link = $('<input value="' + data.record.META_RANK + '" onchange="rank(' + data.record.ID + ', \'R\');" class="txt_rankR" type="text" style="width:50px;" name="featured" id="txt_rankR' + data.record.ID + '" />');
+                                return $link;
+                            },
+                            width: '5%'
+                        }
+                    },
+                    //Initialize validation logic when a form is created
+                    formCreated: function (event, data) {
+                        data.form.find('input[name="NAME"]').addClass('validate[required]');
+                        data.form.find('input[name="DESIGNATION"]').addClass('validate[required]');
+                        data.form.find('textarea[name="DESCRIPTION"]').addClass('validate[required]');
+                        data.form.find('input[name="EMAILID"]').addClass('validate[required],custom[email]');
+                        data.form.find('input[name="THUMB_IMAGE_PATH"]').addClass('validate[required]');
+                        data.form.find('input[name="BIG_IMAGE_PATH"]').addClass('validate[required]');
+                        data.form.validationEngine();
+                    },
+                    //Validate form when it is being submitted
+                    formSubmitting: function (event, data) {
+                        return data.form.validationEngine('validate');
+                    },
+                    //Dispose validation logic when form is closed
+                    formClosed: function (event, data) {
+                        data.form.validationEngine('hide');
+                        data.form.validationEngine('detach');
+                    }
+                });
+    
+                $('#sociallinks').jtable('load');
+                $('#sociallinks').append('<a style="float: right; background: #0397ff; padding: 5px 17px; color: white; margin: 0 30px 0 0; border-radius: 15px; cursor:pointer;">Save</a>');
+            });
+            
+            function showonhome(id, type) {
+                var opt = $("#chk_" + type + "_" + id).prop("checked");
+                if (opt == true) {
+                    opt = "checked";
+                }
+                else{
+                    opt = "";
+                }
+                $.ajax({
+                    url: 'include/ourpeople.php?id=update_opt',
+                    type: 'post',
+                    data: { 'option': opt, 'ID': id, 'TYPE': type },
+                    success: function (data) {
+                        //window.location.href = 'news.html';
+                    },
+                    error: function (e) {
+    
+                    }
+                });
+            }
+
+            function rank(id, type) {
+                var rank = $("#txt_rank" + type + id).val();
+                $.ajax({
+                    url: 'include/ourpeople.php?id=update_rank',
+                    type: 'post',
+                    data: { 'rank': rank, 'ID': id, 'TYPE': type },
+                    success: function (data) {
+                        var obj = jQuery.parseJSON(data);
+                        if (obj.Record == 'Exists') {
+                            alert('Data with the same rank exists.');
+                            window.location.reload();
+                        }
+                        else{
+                            alert('Data updated successfully.');
+                            window.location.reload();
+                        }
+                    },
+                    error: function (e) {
+
+                    }
+                });
+            }
+        </script>
+        <style>
+            .jtable-column-header-container {
+                font-size:0.8em;
+                text-align: center;
+            }
+            .jtable-data-row td {
+                text-align:center;
+            }
+        </style>
+    </body>
+</html>

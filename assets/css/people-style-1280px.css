@@ -1,0 +1,75 @@
+@media(min-width:1280px){
+/* ==========================================================================
+   People Image Banner Definitions
+   ========================================================================== */
+#people-image-banner{
+    width: 100%;
+    height: 498px;
+    background:url('../images/people/people.jpg');
+    background-size:cover;
+    background-position:center;
+}
+/* ==========================================================================
+   People Text Banner Definitions
+   ========================================================================== */
+#people-text-banner {
+	width: 100%;
+	background-color:#f6f6f6;
+	text-align:center;
+}
+#people-text-banner .inner-content {
+	padding:75px 0 55px 0;
+}
+hr{
+	margin:0;
+	border:none;
+}
+hr.invisible{
+    height: 16px;
+    margin: 0;
+    visibility: hidden;
+}
+hr.blue-underline{
+    width: 27px;
+    height:2px;
+    margin:auto;
+    background-color:#0397ff;
+}
+/* ==========================================================================
+   People Content
+   ========================================================================== */
+#people-content {
+	width: 100%;
+	background-color:#f6f6f6;
+	padding:0 0 117px 0;
+}
+.people_list li{
+	width:25%;
+	float:left;
+	font-family: "Benton Sans Book";
+	font-size:12px;
+	padding:0 10px 0 10px;
+	line-height:165%;
+}
+.designation_main{
+	position:relative;
+}
+.people_list li img{
+	width:100%;
+}
+.designation_overlay{
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:100%;
+	background:rgba(255,255,255,0.95);
+	padding:18px 10px;
+	min-height:95px;
+}
+.people_list li .people_name{
+	font-weight:700;
+	display:block;
+	font-family: "Benton Sans";
+	font-size:14px;
+}
+}

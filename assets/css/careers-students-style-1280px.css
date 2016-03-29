@@ -1,0 +1,162 @@
+@media(min-width:1280px){
+/* ==========================================================================
+   CAREERS STUDENTS IMAGE BANNER
+   ========================================================================== */
+#careers-students-image-banner{
+    width: 100%;
+    height: 498px;
+    background:url('../images/careers-students/careers-students.jpg');
+    background-size:cover;
+    background-position:center;
+}
+/* ==========================================================================
+   CAREERS STUDENTS TEXT BANNER   
+   ========================================================================== */
+#careers-students-text-banner {
+	width: 92.1875%;
+    max-width: 1180px;
+    margin:auto; 
+    text-align: center;
+}
+#careers-students-text-banner .text{
+	padding:75px 0 75px 0;
+}
+hr{
+	margin:0;
+	border:none;
+}
+hr.invisible{
+    height: 16px;
+    margin: 0;
+    visibility: hidden;
+}
+hr.blue-underline{
+    width: 27px;
+    height:2px;
+    margin:auto;
+    background-color:#0397ff;
+}
+/* ==========================================================================
+   CAREERS STUDENTS SECTION ONE 
+   ========================================================================== */
+.content-panel {
+    float: left;
+    position: relative;
+    min-height: 1px;
+}
+.column-spacer {
+    float: left;
+    position: relative;
+    min-height: 1px;
+}
+#careers-students-section-one {
+    width: 100%;
+}
+#careers-students-section-one .row {
+    width: 100%;
+    margin: auto;
+}
+#careers-students-section-one .content-panel {
+    height: 100%;
+    padding: 41px 61px 41px 41px;
+    background-color: #fff;
+    overflow:hidden;
+}
+#careers-students-section-one .content-panel.feature-image {
+    padding: 0;
+}
+#careers-students-section-one .content-panel.twitter {
+    background-color: #0397ff;
+}
+#careers-students-section-one .content-panel.twitter .underline {
+    opacity: 0;
+}
+#careers-students-section-one .content-panel table {
+    width: 100%;
+    height: 100%;
+}
+#careers-students-section-one .row .content-panel.feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#careers-students-section-one .content-panel td {
+    text-align: left;
+}
+#careers-students-section-one .title {
+	height:38px;
+    color: #0397ff;
+    text-transform: uppercase;
+    vertical-align: top;
+}
+#careers-students-section-one .content-panel .title img {
+    width: 10%;
+    vertical-align:top;
+}
+#careers-students-section-one .content-panel .underline {
+    vertical-align:top;
+}
+#careers-students-section-one .text,.subtext{
+	vertical-align:bottom;
+}
+#careers-students-section-one .subtext{
+	height:43px;
+	vertical-align:bottom;
+}
+hr{
+	margin:0;
+	border:none;
+}
+#careers-students-section-one .content-panel .title hr.invisible{
+    height: 21px;
+    margin: 0;
+    visibility: hidden;
+}
+#careers-students-section-one .content-panel .title hr.grey-underline{
+    width: 27px;
+    height:2px;
+    background-color:#d9d9da;
+}
+/* ==========================================================================
+   CAREERS STUDENTS SECTION TWO
+   ========================================================================== */
+#careers-students-section-two {
+    width: 100%;
+    background-image: url('../images/careers/visit-your-college.jpg');
+    background-size: cover;
+    background-position:center;
+}
+#careers-students-section-two .inner-content{
+	padding:88px 0 88px 0;
+    text-align: center;
+}
+/* ==========================================================================
+   CAREERS STUDENTS SECTION THREE
+   ========================================================================== */
+#careers-students-section-three {
+    width: 100%;
+    background-image: url('../images/careers-students/experienced-professionals.jpg');
+    background-size: cover;
+    background-position:center;
+}
+#careers-students-section-three .inner-content{
+	padding:88px 0 88px 0;
+    text-align: center;
+}
+hr{
+	margin:0;
+	border:none;
+}
+hr.invisible{
+    height: 15px;
+    margin: 0;
+    visibility: hidden;
+}
+hr.white-underline{
+    width: 27px;
+    margin:auto;
+    height:2px;
+    background-color:#fff;
+}
+}

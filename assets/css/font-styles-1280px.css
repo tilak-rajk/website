@@ -1,0 +1,439 @@
+@media(min-width:1280px){
+/* ==========================================================================
+   Metacube Font Definitions 
+   font-family; 
+   font-weight;
+   font-style;
+   font-size; 
+   line-height; 
+   letter-spacing;
+   color;
+   text-decoration;
+   text-transform;
+   ========================================================================== */
+/* ==========================================================================
+   Body Copy Buttons
+   ========================================================================== */
+#more-content .b1 .btn-text,
+#view-all .b1 .btn-text{
+	font-family:"Benton Sans";
+	font-weight:bold;
+	font-style:normal;
+	font-size: 12px;
+	line-height:inherit;
+	letter-spacing:0.120em;
+	color:#8b8a8a;
+    text-transform:uppercase;
+}
+.b2 .btn-text{
+    font-family: "Benton Sans";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px;
+    line-height:inherit;
+    letter-spacing: 0.025em;
+    color: #000;
+    text-transform:lowercase;
+}
+.b3 .btn-text, .arrow-anchor{
+    font-family: "Benton Sans";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 12px;
+    line-height: inherit;
+    letter-spacing: 0.15em;
+    color:#000;
+    text-transform:none;
+} 
+/* ==========================================================================
+   Body Copy Headers
+   ========================================================================== */
+h1{ 
+    font-family: "Benton Sans";
+    font-weight:bold;
+    font-style:normal;
+    font-size: 83.25px;
+    line-height: normal;
+    letter-spacing: 0.1em;   
+    color: #fff;
+    text-transform:uppercase;
+} 
+h2{
+    font-family: "Benton Sans";
+    font-weight:bold;
+    font-style:normal;
+    font-size: 50px;
+    line-height: normal;
+    letter-spacing: 0.1em;
+    color: #fff;
+    text-transform:uppercase;
+}
+h3{
+	font-family: "Benton Sans Light";
+	font-size:36px;
+	/* line-height:normal; */
+	letter-spacing:0.010em;
+	color:#000;
+	text-transform:none;
+}
+h4{
+	font-family: "Benton Sans Light";
+	font-size:28px;
+	line-height:52px;
+	line-height:normal;
+	letter-spacing:0.030em;
+	color:#000;
+	text-transform:none;
+}
+h5{
+	font-family: "Benton Sans";
+	font-weight:bold;
+	font-style:normal;
+	font-size: 26.97px;
+	line-height:1.4;
+	letter-spacing:0.090em;
+	color:#000;
+	text-transform:none;
+}
+h6{
+	font-family: "Benton Sans";
+    font-weight: bold;
+    font-style: normal;
+	font-size:14px;
+	line-height:17.09px;
+	letter-spacing:0.100em;
+	color:#000;
+	text-transform:none;
+}
+.h48p{
+	font-family: "Benton Sans Light";
+	font-size:48px;
+	line-height:68px;
+	letter-spacing:0.010em;
+	color:#fff;
+	text-transform:none;
+}
+.h30p{
+    font-family: "Benton Sans Light";
+    font-size: 30px;
+    line-height: 46px;
+    line-height:1.4;
+    letter-spacing: 0.010em;
+    text-transform:none;
+    color:#fff;
+}
+.h18p{
+    font-family: "Benton Sans";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+    line-height: normal;
+    letter-spacing: 0.050em;
+    text-transform:uppercase;
+}
+.h16p{
+    font-family: "Benton Sans";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 0.050em;
+    text-transform:uppercase;
+}
+/* ==========================================================================
+   Body Copy Paragraphs
+   ========================================================================== */
+.p1{
+	font-family: "Benton Sans Book";
+    font-size: 22px;
+    line-height: 36px;
+    letter-spacing: 0.010em;
+    color:#000;	
+    text-transform:none;
+}
+.p2{
+    font-family: "Benton Sans Book";
+    font-size: 18px;
+    line-height: normal;
+    letter-spacing: 0.040em; 
+    color: #000;
+    text-transform:none; 
+}
+.p3, .pop_list, .popTable{
+	font-family: "Benton Sans Book";
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.030em;
+    color:#000;	
+    text-transform:none;
+}
+.p4{
+	font-family: "Benton Sans Book";
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.030em;
+    color:#000;	
+    text-transform:none;
+}
+.p5{
+	font-family: "Benton Sans Book";
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.030em;
+    color:#000;	
+    text-transform:none;
+}
+/* ==========================================================================
+   Header and Footer 
+   ========================================================================== */
+#metacube-header .header-text{
+    font-family: "Benton Sans Book";
+    font-size: 18px;
+    line-height: 100%; 
+    letter-spacing: 0.025em;
+    color: #000;
+}
+#metacube-header a {
+    text-decoration: none;
+    color: #000;
+}
+#metacube-footer #nav-one td{
+    font-family: "Benton Sans Book";
+    font-size: 18px;
+    line-height: 38px;
+    letter-spacing: 0.025em;
+    color: #918f8f;
+}
+#metacube-footer #nav-two td{
+    font-family: "Benton Sans Book";
+    font-size: 14px;
+    line-height: 38px;
+    letter-spacing: 0.025em;
+    color: #918f8f;
+}
+#metacube-footer .p-footer{
+    font-family: "Benton Sans Book";
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.050em;
+    color: #918f8f;
+    max-width:none;
+}
+/* ==========================================================================
+   Headings
+   ========================================================================== */
+/* ==========================================================================
+   Headings - h3
+   ========================================================================== */
+#people-inside-text-banner h3{
+	text-transform:capitalize;
+}
+.contact-content h3{
+	max-width:none;
+}
+/* ==========================================================================
+   Headings - h4
+   ========================================================================== */
+#careers-professionals-section-two h4,
+#careers-students-section-two h4{
+    color:#fff;
+} 
+#homepage-section-two h4{
+    color:#fff;
+    max-width:90%;
+}
+/* ==========================================================================
+   Headings - h5
+   ========================================================================== */
+#about-section-two h5,
+#careers-professionals-section-three h5,
+#careers-students-section-three h5,
+#careers-section-one h5,
+#careers-section-two h5,
+.process-content h5,
+#engine-section-one h5{
+	color:#fff;
+	text-transform:uppercase;
+}
+#landscape-content h5{
+    text-transform:uppercase;
+    max-width:none;
+}
+#homepage-section-one h5{
+    text-transform:uppercase;
+}
+/* ==========================================================================
+   Headings - h6
+   ========================================================================== */
+#about-section-three h6,
+#blog-content h6,
+#careers-professionals-section-one h6,
+#careers-students-section-one h6,
+#careers-section-four h6,
+.news-inside-content h6,
+#homepage-section-three h6{
+	color:#0397ff;
+	text-transform:uppercase;
+	max-width:none;
+} 
+/* .news-content h6{
+	color:#000;
+	text-transform:uppercase;
+} */
+#news-inside-image-banner h6{
+	color:#fff;
+	text-transform:uppercase;
+	max-width:none;
+}
+/* ==========================================================================
+   Paragraphs
+   ========================================================================== */
+/* ==========================================================================
+   Paragraphs - p1
+   ========================================================================== */
+#about-section-three .p1,
+#blog-content .p1,
+#careers-professionals-section-one .p1,
+#careers-students-section-one .p1,
+#careers-section-four .p1,
+.news-inside-content .p1,
+#homepage-section-three .p1{
+    max-width:none;
+}
+#homepage-section-three .twitter .p1{
+    color:#fff;	
+    max-width:none;
+}
+/* ==========================================================================
+   Paragraphs - p2
+   ========================================================================== */
+#process-image-banner .p2,
+#landscape-image-banner .p2,
+#engine-image-banner .p2{
+    color: #fff;
+}
+/* ==========================================================================
+   Paragraphs - p3
+   ========================================================================== */
+#about-section-two .p3,
+#careers-professionals-section-two .p3,
+#careers-students-section-two .p3,
+#careers-professionals-section-three .p3,
+#careers-students-section-three .p3,
+#careers-section-one .p3,
+#careers-section-two .p3,
+.process-content .p3,
+#news-inside-image-banner .p3,
+#homepage-section-two .p3,
+#engine-section-one .p3{
+	letter-spacing:0.050em;
+    color:#fff;	
+}
+.contact-content .p3.blue{
+    /* color:#918f8f;	 */
+    max-width:none;
+}
+#people-inside-content .p3.blue,
+#people-inside-content .p3.blue a
+/* .news-content .p3.blue */{
+    color:#0397ff;
+}
+#about-section-one .p3,
+.contact-content .p3.black,
+#engine-section-two .p3{
+    max-width:none;
+}
+/* ==========================================================================
+   Paragraphs - p4
+   ========================================================================== */
+#about-section-two .p4{
+    color:#fff;	
+    text-transform:capitalize;
+}
+#about-section-three .p4,
+#blog-content .p4,#careers-professionals-section-one .p4,
+#careers-students-section-one .p4,
+#careers-section-four .p4,
+.news-inside-content .subtext .p4,
+#homepage-section-three .p4{
+    color:#8b8a8a;	
+    text-transform:capitalize;
+    max-width:none;
+}
+#careers-section-three .p4{
+    text-transform:capitalize;
+    max-width:none;
+}
+.contact-content .p4{
+    max-width:none;	
+} 
+#people-content .p4{
+	font-family: "Benton Sans";
+	font-weight:bold;
+	font-style:normal;
+    text-transform:capitalize;
+    max-width:none;
+}
+#homepage-section-three .twitter .p4{
+    color:#fff;	
+    text-transform:lowercase;
+    max-width:none;
+}
+#engine-section-four .p4{
+	font-family: "Benton Sans";
+	font-weight:bold;
+	font-style:normal;
+    text-transform:uppercase;
+} 
+#engine-section-five .p4{
+	font-family: "Benton Sans";
+	font-weight:bold;
+	font-style:normal;
+}
+/* ==========================================================================
+   Paragraphs 
+   ========================================================================== */
+/* ==========================================================================
+   Paragraphs - p5 
+   ========================================================================== */
+#about-section-two .p5{
+    color:#fff;	
+    text-transform:uppercase;
+}
+#careers-section-three .p5,
+#people-content .p5{
+    max-width:none;
+}
+/* ==========================================================================
+   Buttons 
+   ========================================================================== */
+/* Buttons - b2
+   ========================================================================== */
+.process-content .b2 .btn-text{
+    color: #fff;
+}
+#landscape-content .b2 .btn-text{
+    color: #8b8a8a;
+}
+/* Buttons - b3
+   ========================================================================== */
+#homepage-section-two .b3 .btn-text,
+#homepage-section-four .b3 .btn-text,
+#engine-section-one .b3 .btn-text,
+#engine-section-three .b3 .btn-text,
+#engine-section-four .b3 .btn-text,
+#careers-professionals-section-two .b3 .btn-text,
+#careers-students-section-two .b3 .btn-text,
+#careers-professionals-section-three .b3 .btn-text,
+#careers-students-section-three .b3 .btn-text,
+#careers-section-one .b3 .btn-text,
+#careers-section-two .b3 .btn-text{
+    color:#fff;
+    text-transform:uppercase;
+}
+#engine-section-two .b3 .btn-text{
+	color:#8b8a8a;
+	letter-spacing:0.10em;
+	text-transform:uppercase;	
+}
+}

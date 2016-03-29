@@ -1,0 +1,210 @@
+/* ==========================================================================
+   ABOUT IMAGE BANNER
+   ========================================================================== */
+#about-image-banner{
+    width: 100%;
+    height: 498px;
+    height:62.25vh;
+    background:url('../images/about/about.jpg');
+    background-size:cover;
+    background-position:center;
+}
+/* ==========================================================================
+   ABOUT TEXT BANNER   
+   ========================================================================== */
+.about-text-banner {
+	background-color:#fff;
+	width: 92.1875%;
+    max-width: 1180px;
+    margin:auto; 
+    text-align: center;
+}
+.about-text-banner.two{
+	background-color:#e7e5e5;
+	width: 92.1875%;
+    max-width: 1180px;
+    margin:auto; 
+    text-align: center;
+}
+.about-text-banner .text{
+	padding:75px 0 75px 0;
+	padding:9.375vh 0 9.375vh 0;
+}
+hr{
+	margin:0;
+	border:none;
+}
+hr.invisible{
+    height: 16px;
+    height: 2vh;
+    margin: 0;
+    visibility: hidden;
+}
+hr.blue-underline{
+    width: 27px;
+    width: 3.375vh;
+    height:2px;
+    margin:auto;
+    background-color:#0397ff;
+}
+/* ==========================================================================
+   ABOUT SECTION ONE  
+   ========================================================================== */
+#about-section-one{
+	display:none;
+}
+#about-section-one hr{
+	margin:0;
+	border:none;
+}
+#about-section-one hr.invisible{
+    height: 34px;
+    height: 4.25vh;
+    margin: 0;
+    visibility: hidden;
+}
+#about-section-one hr.blue-underline{
+    width: 27px;
+    width: 3.375vh;
+    margin:auto;
+    height:2px;
+    background-color:#0297ff;
+}
+/* ==========================================================================
+   ABOUT SECTION TWO  
+   ========================================================================== */
+.about_testimonials .row{
+	margin:0;
+}
+#about-section-two {
+	width:100%;
+}
+#about-section-two .inner-content{
+	padding:0 0 105px 0;
+	padding:0 0 13.125vh 0;
+    text-align: center;
+}
+#about-section-two hr{
+	margin:0;
+	border:none;
+}
+#about-section-two hr.invisible{
+    height: 15px;
+    height: 1.875vh;
+    margin: 0;
+    visibility: hidden;
+}
+#about-section-two hr.white-underline{
+    width: 27px;
+    width:3.375vh;
+    margin:auto;
+    height:2px;
+    background-color:#fff;
+}
+.carousel-control-color {
+    color: #fff;
+}
+.carousel-control.right {
+    background-image: none;
+}
+.carousel-control.left {
+    background-image: none;
+}
+/* ==========================================================================
+   ABOUT SECTION THREE  
+   ========================================================================== */
+.content-panel {
+    float: left;
+    position: relative;
+    min-height: 1px;
+}
+.column-spacer {
+    float: left;
+    position: relative;
+    min-height: 1px;
+}
+#about-section-three {
+    width: 100%;
+}
+#about-section-three .row {
+    width: 100%;
+    margin: auto;
+}
+#about-section-three .content-panel {
+    height: 100%;
+    padding: 41px 61px 41px 41px;
+    padding: 5.125vmin 7.625vmin 5.125vmin 5.125vmin;
+    background-color: #fff;
+    overflow:hidden;
+}
+#about-section-three .content-panel.feature-image {
+    padding: 0;
+}
+#about-section-three .content-panel.twitter {
+    background-color: #0397ff;
+}
+#about-section-three .content-panel.twitter .underline {
+    opacity: 0;
+}
+#about-section-three .content-panel table {
+    width: 100%;
+    height: 100%;
+}
+#about-section-three .row .content-panel.feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#about-section-three .content-panel td {
+    text-align: left;
+}
+#about-section-three .title {
+	height:38px;
+	height:4.75vmin;
+    color: #0397ff;
+    text-transform: uppercase;
+    vertical-align: top;
+}
+#about-section-three .content-panel .title img {
+    width: 10%;
+    vertical-align:top;
+}
+#about-section-three .content-panel .underline {
+    vertical-align:top;
+}
+#about-section-three .text,.subtext{
+	vertical-align:bottom;
+}
+#about-section-three .subtext{
+	height:43px;
+	height:5.375vmin;
+	vertical-align:bottom;
+}
+hr{
+	margin:0;
+	border:none;
+}
+#about-section-three .content-panel .title hr.invisible{
+    height: 21px;
+    height: 2.625vmin;
+    margin: 0;
+    visibility: hidden;
+}
+#about-section-three .content-panel .title hr.grey-underline{
+    width: 27px;
+    width: 3.375vmin;
+    height:2px;
+    background-color:#d9d9da;
+}
+/* ==========================================================================
+   MORE CONTENT  
+   ========================================================================== */
+#more-content{
+    width: 100%;
+    background-color: #e7e5e5;
+}
+#more-content .button{
+	padding:74px 0 74px 0;
+    text-align: center;
+}

@@ -1,0 +1,156 @@
+<!-------------------- FOOTER LOGO -------------------->
+<div id="logo">
+	<table>
+		<tr>
+			<td>
+				<!-- <span style="color:#918f8f;font-family:'Helvetica-Light';font-size:32.82px;letter-spacing:0;">meta</span><span style="color:#918f8f;font-family:'Helvetica-Bold';font-size:32.82px;letter-spacing:0;">cube</span> -->
+				<img src="assets/images/logo-grey.svg" alt="logo">
+			</td>
+		</tr>
+	</table>
+</div>
+<!-------------------- FOOTER NAV ONE -------------------->
+<div id="nav-one">
+	<table>
+		<tr>
+			<td onclick="location.href='landscape.php';" style="cursor: pointer;">Innovation Landscape</td>
+			<td class="bullet"><img src="assets/images/list-bullet.gif" alt="metacube list bullet" /></td>
+			<td onclick="location.href='engine.php';" style="cursor: pointer;">Innovation Engine</td>
+			<td class="bullet"><img src="assets/images/list-bullet.gif" alt="metacube list bullet" /></td>
+			<td onclick="location.href='process.php';" style="cursor: pointer;">Innovation Process</td>
+		</tr>
+	</table>
+</div>
+<!-------------------- FOOTER NAV TWO -------------------->
+<div id="nav-two">
+	<table class="desktop">
+		<tr>
+			<td onclick="location.href='blog.php';" style="cursor: pointer;">Ideas</td>
+			<td>|</td>
+			<td onclick="location.href='careers.php';" style="cursor: pointer;">Careers</td>
+			<td>|</td>
+			<td onclick="location.href='news.php';" style="cursor: pointer;">News</td>
+			<td>|</td>
+			<td onclick="location.href='about.php';" style="cursor: pointer;">About</td>
+			<td>|</td>
+			<!-- <td onclick="location.href='people.php';" style="cursor: pointer;">People</td>
+			<td>|</td> -->
+			<td onclick="location.href='contact.php';" style="cursor: pointer;">Contact</td>
+		</tr>
+	</table>
+	<table class="mobile">
+		<tr>
+			<td onclick="location.href='blog.php';" style="cursor: pointer;">Ideas</td>
+		</tr>
+		<tr class="spacer">
+		</tr>
+		<tr>
+			<td onclick="location.href='careers.php';" style="cursor: pointer;">Careers</td>
+		</tr>
+		<tr class="spacer">
+		</tr>
+		<tr>
+			<td onclick="location.href='news.php';" style="cursor: pointer;">News</td>
+		</tr>
+		<tr class="spacer">
+		</tr>
+		<tr>
+			<td onclick="location.href='about.php';" style="cursor: pointer;">About</td>
+		</tr>
+		<tr class="spacer">
+		</tr>
+		<tr>
+			<td onclick="location.href='contact.php';" style="cursor: pointer;">Contact</td>
+		</tr>
+	</table>
+</div>
+
+
+<!-------------------- FOOTER SOCIAL MEDIA -------------------->
+<div id="social-media">
+	<table>
+		<tr>
+			<td>
+				<a href="https://twitter.com/Metacube_Jaipur" id="social1" class="sIcons twitter_ico" target="_blank" title="Twitter"></a>
+			</td>
+			<td>
+				<a href="https://www.facebook.com/Metacubesoftwarejaipur/" id="social2" class="sIcons facebook_ico" target="_blank" title="Facebook"></a>
+			</td>
+			<td>
+				<a href="https://plus.google.com/+MetacubeSoftwaresjaipur/posts" id="social3" class="sIcons gp_ico" target="_blank" title="Google Plus"></a>
+			</td>
+			<td>
+				<a href="https://www.instagram.com/metacube_jaipur/" id="social4" class="sIcons instagram_ico" target="_blank" title="Instagram"></a>
+			</td>
+			<td>
+				<a href="https://www.glassdoor.co.in/Overview/Working-at-Metacube-Software-Pvt-Ltd-EI_IE466262.11,36.htm" id="social5" class="sIcons galssdoor_ico" target="_blank" title="Glassdoor"></a>
+			</td>
+			<td>
+				<a href="https://www.linkedin.com/company/metacube" id="social6" class="sIcons linked_ico" target="_blank" title="LinkedIn"></a>
+			</td>
+		</tr>
+	</table>
+</div>
+
+<!-------------------- COPYRIGHT -------------------->
+<div id="copyright">
+	<p class="p-footer">&copy;&nbsp;2015 Metacube Software Private Limited</p>
+</div>
+<script>
+    $(window).load(function () {
+        var id = $("#token").val();
+        
+        $.ajax({
+            url: 'include/social.php',
+            type: 'post',
+            data: {},
+            beforeSend: function (request)
+            {
+                request.setRequestHeader("token", id);
+            },
+            success: function (data) {
+                var obj = jQuery.parseJSON(data);
+                $.each(obj.Records, function (key, value) {
+                    if (value.TWITTER_LINK != '') {
+                        $('#social1').attr('href', value.TWITTER_LINK);    
+                    }else{
+                        $('#social1').css('display', 'none');
+                    }
+                    
+                    if (value.FACEBOOK_LINK != '') {
+                        $('#social2').attr('href', value.FACEBOOK_LINK);
+                    }else{
+                        $('#social2').css('display', 'none');
+                    }
+                    
+                    if (value.GOOGLE_PLUS_LINK != '') {
+                        $('#social3').attr('href', value.GOOGLE_PLUS_LINK);
+                    }else{
+                        $('#social3').css('display', 'none');
+                    }
+                    
+                    if (value.INSTAGRAM_LINK != '') {
+                        $('#social4').attr('href', value.INSTAGRAM_LINK);
+                    }else{
+                        $('#social4').css('display', 'none');
+                    }
+                    
+                    if (value.GLASSDOOR_LINK != '') {
+                        $('#social5').attr('href', value.GLASSDOOR_LINK);
+                    }else{
+                        $('#social5').css('display', 'none');
+                    }
+                    
+                    if (value.LINKEDIN_LINK != '') {
+                        $('#social6').attr('href', value.LINKEDIN_LINK);
+                    }else{
+                        $('#social6').css('display', 'none');
+                    }  
+                });
+            },
+            error: function (e) {
+
+            }
+        });
+    });
+</script>

@@ -1,0 +1,109 @@
+/* ==========================================================================
+   News Inside Image Banner
+   ========================================================================== */
+#news-inside-image-banner {
+    width: 100%;
+    background-image: url('../images/news-inside/news-inside.jpg');
+    background-size: cover;
+    background-position:center;
+}
+#news-inside-image-banner .inner-content{
+	padding:136px 0 136px 0;
+	padding: 17vmin 0 17vmin 0;
+    text-align: center;
+}
+/* ==========================================================================
+   News-Inside Section Three  
+   ========================================================================== */
+.news-inside-content .caption hr{
+	width:393px;
+	width:49.125vh;
+	height:1px;
+	background-color:#918f8f;
+	max-width: 67.7966%;
+	margin:auto;
+}
+.content-panel {
+    float: left;
+    position: relative;
+    min-height: 1px;
+}
+.column-spacer {
+    float: left;
+    position: relative;
+    min-height: 1px;
+}
+.news-inside-content {
+    width: 100%;
+}
+.news-inside-content .row {
+    width: 100%;
+    margin: auto;
+}
+.news-inside-content .content-panel {
+    height: 100%;
+    padding: 41px 61px 41px 41px;
+    padding: 5.125vmin 7.625vmin 5.125vmin 5.125vmin;
+    background-color: #fff;
+    overflow:hidden;
+}
+.news-inside-content .content-panel.feature-image {
+    padding: 0;
+}
+.news-inside-content .content-panel.twitter {
+    background-color: #0397ff;
+}
+.news-inside-content .content-panel.twitter .underline {
+    opacity: 0;
+}
+.news-inside-content .content-panel table {
+    width: 100%;
+    height: 100%;
+}
+.news-inside-content .row .content-panel.feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.news-inside-content .content-panel td {
+    text-align: left;
+}
+.news-inside-content .title {
+	height:38px;
+	height:4.75vmin;
+    color: #0397ff;
+    text-transform: uppercase;
+    vertical-align: top;
+}
+.news-inside-content .content-panel .title img {
+    width: 10%;
+    vertical-align:top;
+}
+.news-inside-content .content-panel .underline {
+    vertical-align:top;
+}
+.news-inside-content .text,.subtext{
+	vertical-align:bottom;
+}
+.news-inside-content .subtext{
+	height:43px;
+	height:5.375vmin;
+	vertical-align:bottom;
+}
+hr{
+	margin:0;
+	border:none;
+}
+.news-inside-content .content-panel .title hr.invisible{
+    height: 21px;
+    height: 2.625vmin;
+    margin: 0;
+    visibility: hidden;
+}
+.news-inside-content .content-panel .title hr.grey-underline{
+    width: 27px;
+    width: 3.375vmin;
+    height:2px;
+    background-color:#d9d9da;
+}

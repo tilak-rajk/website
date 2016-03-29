@@ -1,0 +1,42 @@
+@media(min-width:1280px){
+/* ==========================================================================
+   People Inside Image Banner   
+   ========================================================================== */
+#people-inside-image-banner{
+    width: 100%;
+    height: 498px;
+    background:url('../images/people-inside/people-inside.jpg');
+    background-size:cover;
+    background-position:center;
+}
+/* ==========================================================================
+   People-Inside Text Banner Definitions
+   ========================================================================== */
+#people-inside-text-banner {
+	background-color:#f6f6f6;
+	width: 100%;
+	text-align:center;
+}
+#people-inside-text-banner .inner-content {
+	padding:56px 0 54px 0;
+}
+/* ==========================================================================
+   People-Inside Content Definitions
+   ========================================================================== */
+#people-inside-content {
+	width: 92.1875%;
+    margin:auto;
+	display:table;
+	text-align:center;
+}
+#people-inside-content .inner-content {
+	display:table-cell;
+	vertical-align:middle;
+}
+hr{
+	width:91.5254%;
+	margin:auto;
+	height:1px;
+	background-color:rgba(0,0,0,0.302);
+}
+}

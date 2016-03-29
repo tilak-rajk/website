@@ -1,0 +1,541 @@
+/* ==========================================================================
+   ENGINE IMAGE BANNER
+   ========================================================================== */
+#engine-image-banner {
+    height: 857px;
+    height: 107.125vmin;
+    text-align: center;
+    background:#0397ff url('../images/engine/banner-bg.png') no-repeat center bottom;
+    background-size:100% auto;
+    position:relative;
+}
+#engine-image-banner .svg-image {
+ 	width: 92.1875%;
+    max-width: 1180px;
+    margin:auto;
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height:60%;
+}
+#engine-image-banner .svg-image img {
+	height: 90%;
+	width: auto;
+	margin: 0;
+}
+#engine-image-banner .text {
+    padding-top: 77px;
+    padding-top: 9.625vmin;
+}
+/* ==========================================================================
+   ENGINE TEXT BANNER 
+   ========================================================================== */
+#engine-text-banner {
+	width: 92.1875%;
+    max-width: 1180px;
+    margin:auto; 
+    text-align: center;
+}
+#engine-text-banner .text {
+	padding:93px 0 93px 0;
+	padding:11.625vh 0 11.625vh 0;
+}
+/* ==========================================================================
+   ENGINE SECTION ONE 
+   ========================================================================== */
+#engine-section-one {
+    width: 100%;
+    background-image: url('../images/engine/metacubian.jpg');
+    background-size: cover;
+    background-position:center;
+}
+#engine-section-one .inner-content{
+	padding:88px 0 88px 0;
+	padding:11vh 0 11vh 0;
+    text-align: center;
+}
+hr{
+	margin:0;
+	border:none;
+}
+hr.invisible{
+    height: 15px;
+    height:1.875vh;
+    margin: 0;
+    visibility: hidden;
+}
+hr.white-underline{
+    width: 27px;
+    width: 3.375vh;
+    margin:auto;
+    height:2px;
+    background-color:#fff;
+}
+/* ==========================================================================
+   ENGINE SECTION TWO 
+   ========================================================================== */
+#engine-section-two{
+	width:100%;
+}
+#engine-section-two .row{
+	margin:0;
+	width:100%;
+}
+#engine-section-two .row .content-panel{
+	height:100%;
+	background-color:#fff;
+	overflow:hidden;
+}
+#engine-section-two .row .content-panel table{
+	width:100%;
+	height:100%;
+}
+#engine-section-two .row .content-panel table .image-text{
+	height:185px;
+	height:23.125vh;
+	background:url('../images/engine/engine-info1.jpg') no-repeat ;
+	background-size:cover;
+	background-position:center;
+	vertical-align:top;
+}
+#engine-section-two .row .content-panel table .image-text2{
+	background:url('../images/engine/engine-info2.jpg') no-repeat; 
+	background-size:cover;
+}
+#engine-section-two .row .content-panel table .image-text3{
+	background:url('../images/engine/engine-info3.jpg') no-repeat; 
+	background-size:cover;
+}
+#engine-section-two .row .content-panel table .image-text td{
+	padding:0 40px 0 40px;
+	padding:0 5vmin 0 5vmin;
+}
+#engine-section-two .row .content-panel table .text{
+	vertical-align:top;
+}
+#engine-section-two .row .content-panel table .text td{
+	padding-left:40px;
+	padding-right:40px;
+	padding-top:54px;
+	padding-left:5vmin;
+	padding-right:5vmin;
+	padding-top:6.75vmin;
+}
+#engine-section-two .row .content-panel table .button{
+	vertical-align:bottom;
+}
+#engine-section-two .row .content-panel table .button td{
+	padding-left:40px;
+	padding-right:40px;
+	padding-bottom:71px;
+	padding-left:5vmin;
+	padding-right:5vmin;
+	padding-bottom:8.875vh;
+}
+.carousel-control-color {
+    color: #0397ff;
+}
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+}
+.mobile .container {
+    width: 100%;
+}
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    background-color: rgba(3, 151, 255, 0.3);
+    border: none;
+}
+.carousel-indicators .active {
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    background-color: #0397ff;
+    border: none;
+}
+/* ==========================================================================
+   ENGINE SECTION THREE 
+   ========================================================================== */
+.content-panel {
+    float: left;
+    position: relative;
+    min-height: 1px;
+}
+.column-spacer {
+    float: left;
+    position: relative;
+    min-height: 1px;
+}
+#engine-section-three {
+    width: 100%;
+}
+#engine-section-three .row {
+    width: 100%;
+    margin: auto;
+}
+#engine-section-three .content-panel {
+    height: 100%;
+    padding: 41px 61px 41px 41px;
+    padding: 5.125vmin 7.625vmin 5.125vmin 5.125vmin;
+    background-color: #fff;
+    overflow:hidden;
+}
+#engine-section-three .content-panel.feature-image {
+    padding: 0;
+}
+#engine-section-three .content-panel.twitter {
+    background-color: #0397ff;
+}
+#engine-section-three .content-panel.twitter .underline {
+    opacity: 0;
+}
+#engine-section-three .content-panel table {
+    width: 100%;
+    height: 100%;
+}
+#engine-section-three .row .content-panel.feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#engine-section-three .content-panel td {
+    text-align: left;
+}
+#engine-section-three .title {
+	height:38px;
+	height:4.75vmin;
+    color: #0397ff;
+    text-transform: uppercase;
+    vertical-align: top;
+}
+#engine-section-three .content-panel .title img {
+    width: 10%;
+    vertical-align:top;
+}
+#engine-section-three .content-panel .underline {
+    vertical-align:top;
+}
+#engine-section-three .text,.subtext{
+	vertical-align:bottom;
+}
+#engine-section-three .subtext{
+	height:43px;
+	height:5.375vmin;
+	vertical-align:bottom;
+}
+#engine-section-three .content-panel .text td div {
+    display: block;
+    display: -webkit-box;
+    margin: 0 auto;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+hr{
+	margin:0;
+	border:none;
+}
+#engine-section-three .content-panel .title hr.invisible{
+    height: 21px;
+    height: 2.625vmin;
+    margin: 0;
+    visibility: hidden;
+}
+#engine-section-three .content-panel .title hr.grey-underline{
+    width: 27px;
+    width: 3.375vmin;
+    height:2px;
+    background-color:#d9d9da;
+}
+/* ==========================================================================
+   ENGINE SECTION FOUR 
+   ========================================================================== */
+#engine-section-four {
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+    padding-bottom: 74px;
+    padding-bottom:9.25vmin;
+}
+#engine-section-four .content .button {
+    padding-top: 42px;
+    padding-top: 5.2173vh;
+    padding-bottom: 22px;
+    padding-bottom: 2.7321vh;
+}
+#engine-section-four .b2{
+    background-color: #0397ff;
+    height: 52px;
+    height: 6.4596vh;
+    padding:0 50px 0 50px;
+    padding:0 6.2111vh 0 6.2111vh;
+    border-radius: 70px;
+    border: none;
+}
+#engine-section-four{
+	background-color:#fff;
+}
+#engine-section-four .title{
+	width:100%;
+	text-align:center;
+}
+
+#engine-section-four .content table{
+	width:100%;
+}
+#engine-section-four .desktop .content table tr{
+	width:100%;
+	height:200px;
+	height:25vh;
+}
+#engine-section-four .desktop .content table tr td{
+	text-align:center;
+}
+#engine-section-four .desktop .content table tr th{
+	text-align:center;
+}
+#engine-section-four .desktop .content table tr td img{
+	width:50%;
+	height:auto;
+}
+#engine-section-four{
+	background-color:#fff;
+}
+#engine-section-four .title{
+	width:100%;
+	text-align:center;
+}
+#engine-section-four .mobile .content{
+	width:84.375%;
+	margin:auto;
+	/* border-top:1px solid rgba(0,0,0,0.302); */
+}
+#engine-section-four .mobile .content table{
+	width:100%;
+}
+#engine-section-four .mobile .content tr{
+	width:100%;
+	height:200px;
+	height:25vmin;
+}
+#engine-section-four .mobile .content tr td{
+	width:32.3%;
+	text-align:center;
+}
+#engine-section-four .mobile .content tr td img{
+	width:50%;
+	height:auto;
+}
+#engine-section-four .mobile .content tr th{
+	text-align:center;
+}
+.carousel-control-color {
+    color: #0397ff;
+}
+.carousel-control.right {
+    background-image: none;
+}
+.carousel-control.left {
+    background-image: none;
+}
+.carousel-indicators {
+    position: absolute;
+    bottom: 0;
+}
+/* ==========================================================================
+   VIEW ALL 
+   ========================================================================== */
+#view-all{
+    width: 100%;
+    background-color: #e7e5e5;
+}
+#view-all .button{
+	padding:74px 0 0 0;
+    text-align: center;
+}
+
+#content-section-two.engine-content-scrion-two h3{
+	padding:5.5% 0 3% 0;
+}
+.secLastftHead{
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom: 50px;
+	font-family: "Benton Sans Light";
+	font-size: 28px;
+	line-height: 52px;
+	letter-spacing: 0.030em;
+}
+.rounder-button {
+	background-color: #0397ff;
+	color: #fff;
+	border-radius: 70px;
+}
+.engine-banner{
+	color:#fff;
+	/**background:#0397ff url(../images/engine/banner-bg.png) no-repeat center bottom;**/
+	background:#0397ff url(assets/images/engine/banner-bg.png) no-repeat center bottom;
+}
+.engine-banner h1{
+	font-size:50px;
+	font-family: "Benton Sans";
+	padding:70px 0 30px;
+	letter-spacing:1px;
+}
+.engine-banner h1 span{
+	display:block;
+	font-size:83px;
+	margin-top:10px;
+	letter-spacing:3px;
+}
+.engine-banner p{
+	font-size:18px;
+	font-family: "Benton Sans Book";
+}
+.engine-banner img {
+	max-width: 30%;
+	height: auto;
+	width: auto;
+	margin: 50px 0 50px 8%;
+}
+.row-10{
+	margin-left:-10px;
+	margin-right:-10px;
+}
+.engine-three-container .col-sm-4{
+	padding-left:10px;
+	padding-right:10px;
+}
+.engine-column-bg{
+	position:relative;
+}
+
+.engine-column-bg{
+	background:#fff;
+}
+.columnTxt{
+	min-height:250px;
+}
+
+@media (max-width: 1280px) {
+	.engine-banner{
+		background-size: 100% auto;
+	}
+	.engine-banner h1 {
+		font-size:40px;
+	}
+	.engine-banner h1 span{
+		font-size:70px;
+	}
+	.engine-banner p {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 980px) {
+	.mid-text790 .co-para{
+		font-size:20px;
+		font-size: 2.5vh;
+	}
+	.co-heading{
+		line-height:170%;
+	}
+	.engine-banner img {
+		max-width: 40%;
+	}
+	.columnTxt, .columnInner .columnBtn{
+		margin-bottom:20px;
+	}
+	.engine-column-three{
+		padding-left:15px;
+	}
+	.engine-column-three span {
+		padding-left: 0;
+	}
+}
+@media (max-width: 767px) {
+	.rounder-block{
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.engine-banner h1 {
+		font-size: 30px;
+		padding: 40px 0 20px;
+	}
+	.engine-banner h1 span {
+		font-size: 49px;
+	}
+	.engine-banner p {
+		font-size: 12px;
+	}
+	.engine-banner img{
+		margin: 30px 0 30px 8%;
+	}
+	.columnTxt {
+		min-height: auto;
+	}
+	.engine-three-container .col-sm-4{
+		margin-bottom:20px;
+	}
+	.engine-column-three{
+		height:200px;
+		background-size:cover;
+		text-align:center;
+	}
+}
+
+@media (max-width: 480px) {
+	.engine-column-three span {
+		padding-left: 0;
+	}
+	.mid-text790{
+		padding: 8% 0 0;
+	}
+	#content-section-two.engine-content-scrion-two h1:before{
+		bottom:-10px;
+	}
+	#content-section-two.engine-content-scrion-two h3 {
+		padding: 12% 0 10% 0;
+	}
+	.side-arrow{
+		margin-left:0;
+	}
+	.columnBtn.smt-bottom{
+		font-size:10px;
+	}
+	.columnBtn.smt-bottom .side-arrow:before, .columnBtn.smt-bottom .side-arrow:after{
+		width: 8px;
+		height: 2px;
+	}
+	.columnBtn.smt-bottom .side-arrow:before {
+		top: -5px;
+	}
+	.engine-column-three {
+		height: 160px;
+		background-size:cover; 
+	}
+	.columnTxt{
+		margin-bottom:20px;
+	}
+	.book16, .columnTxt{
+		font-size:12px;
+	}
+	.secLastftHead{
+		padding-top: 40px;
+		padding-bottom: 30px;
+		font-size: 18px;
+		line-height: 160%;
+	}
+	.logoSideTxtparent{
+		margin-top:20px;
+	}
+	.engine-banner img {
+		max-width: 60%;
+	}
+}

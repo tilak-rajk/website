@@ -1,0 +1,97 @@
+<div class="MenucloseBtn" id="MenucloseBtn"><span></span></div>
+    <div class="all-menu">
+		<ul class="firstMenu list-unstyled">
+			<li onclick="location.href='landscape.php';" style="cursor: pointer;">Landscape</li>
+			<li onclick="location.href='engine.php';" style="cursor: pointer;">Engine</li>
+			<li onclick="location.href='process.php';" style="cursor: pointer;">Process</li>
+			<li onclick="location.href='blog.php';" style="cursor: pointer;">Ideas</li>
+		</ul>
+		<ul class="subMenu list-unstyled">
+			<li onclick="location.href='about.php';" style="cursor: pointer;">About</li>
+			<li onclick="location.href='careers.php';" style="cursor: pointer;">Careers</li>
+			<li onclick="location.href='news.php';" style="cursor: pointer;">News</li>
+			<!-- <li onclick="location.href='people.php';" style="cursor: pointer;">people</li> -->
+			<li onclick="location.href='contact.php';" style="cursor: pointer;">Contact</li>
+		</ul>
+	</div>
+<div class="social_icons header_social">
+    <ul class="list-unstyled">
+        <li><a href="https://twitter.com/Metacube_Jaipur" class="sIcons twitter_ico" target="_blank" title="Twitter"></a></li>
+        <li><a href="https://www.facebook.com/Metacubesoftwarejaipur/" class="sIcons facebook_ico" target="_blank" title="Facebook"></a></li>
+        <li><a href="https://plus.google.com/+MetacubeSoftwaresjaipur/posts" class="sIcons gp_ico" target="_blank" title="Google Plus"></a></li>
+        <li><a href="https://www.instagram.com/metacube_jaipur/" class="sIcons instagram_ico" target="_blank" title="Instagram"></a></li>
+        <li><a href="https://www.glassdoor.co.in/Overview/Working-at-Metacube-Software-Pvt-Ltd-EI_IE466262.11,36.htm" class="sIcons galssdoor_ico" target="_blank" title="Glassdoor"></a></li>
+        <li><a href="https://www.linkedin.com/company/metacube" class="sIcons linked_ico" target="_blank" title="LinkedIn"></a></li>
+    </ul>
+</div>
+
+<script>
+    $(window).load(function () {
+        $('.toggleMenu').click(function(e){
+            $('.ui-page').addClass('menu-open');
+            $('.mainNav').animate({'left':'0'},'300');
+            //$('.st-pusher').animate({'left': $('.mainNav').outerWidth()},'300');
+            e.preventDefault();
+        });
+        $('.menu_overlay, #MenucloseBtn').click(function(e){
+            $('.ui-page').removeClass('menu-open');
+            $('.mainNav').animate({'left': -$('.mainNav').outerWidth()-20},'300');
+            e.preventDefault();
+        });
+        
+        var id = $("#token").val();
+        
+        $.ajax({
+            url: 'include/social.php',
+            type: 'post',
+            data: {},
+            beforeSend: function (request)
+            {
+                request.setRequestHeader("token", id);
+            },
+            success: function (data) {
+                var obj = jQuery.parseJSON(data);
+                $.each(obj.Records, function (key, value) {
+                    if (value.TWITTER_LINK != '') {
+                        $('.twitter').attr('href', value.TWITTER_LINK);    
+                    }else{
+                        $('.twitter').css('display', 'none');
+                    }
+                    
+                    if (value.FACEBOOK_LINK != '') {
+                        $('.facebook').attr('href', value.FACEBOOK_LINK);
+                    }else{
+                        $('.facebook').css('display', 'none');
+                    }
+                    
+                    if (value.GOOGLE_PLUS_LINK != '') {
+                        $('.googleplus').attr('href', value.GOOGLE_PLUS_LINK);
+                    }else{
+                        $('.googleplus').css('display', 'none');
+                    }
+                    
+                    if (value.INSTAGRAM_LINK != '') {
+                        $('.instagram').attr('href', value.INSTAGRAM_LINK);
+                    }else{
+                        $('.instagram').css('display', 'none');
+                    }
+                    
+                    if (value.GLASSDOOR_LINK != '') {
+                        $('.glassdoor').attr('href', value.GLASSDOOR_LINK);
+                    }else{
+                        $('.glassdoor').css('display', 'none');
+                    }
+                    
+                    if (value.LINKEDIN_LINK != '') {
+                        $('.linkedin').attr('href', value.LINKEDIN_LINK);
+                    }else{
+                        $('.linkedin').css('display', 'none');
+                    }  
+                });
+            },
+            error: function (e) {
+
+            }
+        });
+    });
+</script>

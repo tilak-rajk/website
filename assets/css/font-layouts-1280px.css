@@ -1,0 +1,213 @@
+@media(min-width:1280px){
+/* ==========================================================================
+   Metacube Font Layouts
+   ========================================================================== */
+h1,h2,h3,h4,h5,h6,p,ul{
+	margin:0;
+	padding:0;
+	max-width: 67.7966%;
+    margin: auto;
+}
+ul{
+	max-width: none;
+}
+/* ==========================================================================
+   Buttons 
+   ========================================================================== */
+/* Button - More-Content
+   ========================================================================== */
+#more-content .b1,
+#view-all .b1{
+    min-width: 120px;
+    min-height: 42px;
+    background-color: transparent;
+    border-radius: 70px;
+    -moz-border-radius: 70px;
+    -webkit-border-radius: 70px;
+    border: 1px solid #8b8a8a;
+    color: #8b8a8a;
+    overflow: visible;
+    line-height: 1.4;  
+}
+/* Button 2 - Landscape
+   ========================================================================== */
+/* 
+.process-content .b2{
+    min-width: 98px;
+    min-height: 34px;
+    background-color: transparent;
+    border-radius: 70px;
+    -moz-border-radius: 70px;
+    -webkit-border-radius: 70px;
+    line-height: 1.4;
+}
+.process-content .b2{
+    border: 1px solid #fff;
+} */
+/* Button - Careers-Professionals, Careers-Students, Careers
+   ========================================================================== */
+#careers-section-one .b3,
+#careers-section-two .b3,
+#careers-students-section-three .b3,
+#careers-students-section-two .b3,
+#careers-professionals-section-three .b3,
+#careers-professionals-section-two .b3,
+#homepage-section-four .b3,
+#homepage-section-two .b3,
+#engine-section-one .b3,
+#engine-section-four .b3{
+	background-color: #0397ff;
+	padding:0 50px 0 50px;
+	height: 52px;
+    border-radius: 70px;
+    -moz-border-radius: 70px;
+    -webkit-border-radius: 70px;
+	border: none;
+    overflow:hidden;
+    line-height: 52px;	
+}
+#engine-section-two .b3{
+	background-color: transparent;
+	border: none;
+	padding:0;	
+}
+#engine-section-three .b3{
+	background-color: transparent;
+	border: none;
+	padding:0;	
+}
+/* ==========================================================================
+   Header and Footer 
+   ========================================================================== */
+#metacube-header .header-text{
+    /* padding-top: 4px; */
+}
+/* ==========================================================================
+   Careers Professionals
+   ========================================================================== */
+/* ==========================================================================
+   Paragraphs - Careers 
+   ========================================================================== */
+/* Paragraph 3 - Careers Students Professionals and Careers
+   ========================================================================== */
+#careers-professionals-section-two .p3,
+#careers-professionals-section-three .p3,
+#careers-students-section-two .p3,
+#careers-students-section-three .p3,
+#careers-section-one .p3,
+#careers-section-two .p3,
+.process-content .p3,
+#engine-section-one .p3,
+#homepage-section-two .p3{
+    padding: 42px 0 42px 0;
+}
+#process-text-banner .p3,
+#landscape-text-banner .p3,
+#engine-text-banner .p3{
+    padding-top: 47px;
+}
+.contact-content .p3.blue{
+	/* padding:14px 0 0 0;	 */
+}
+#landscape-content .p3{
+	padding-top:30px;
+    text-align:left;
+    max-width:none;
+}
+#people-inside-text-banner .p3{
+    padding:20px 0 0 0;
+}
+#people-inside-content .p3{
+	padding:56px 0 0 0;
+}
+#people-inside-content .p3.blue{
+	padding:40px 0 40px 0;
+}
+.news-inside-content .caption hr{
+    margin: 24px auto 32px auto;
+}  
+.news-inside-content .text .p3{
+    padding: 43px 0 75px 0;
+} 
+#engine-section-four .p3{
+    padding: 74px 0 74px 0;
+}
+.news-inside-content .caption .p3{
+    padding-top: 32px;
+}
+#news-text-banner .p3,
+.about-text-banner .p3,
+#careers-professionals-text-banner .p3,
+#careers-students-text-banner .p3,
+#careers-text-banner .p3{
+    padding:23px 0 0 0;
+}
+.about-text-banner.two .p3{
+    padding:49px 0 49px 0;
+}
+#about-section-two .p3{
+    padding: 63px 0 63px 0;
+}
+/* Paragraph 4 - About
+   ========================================================================== */ 
+#about-section-two .p4{
+    padding: 16px 0 0 0;
+}
+/* ==========================================================================
+   Headings - 
+   ========================================================================== */
+/* Heading 1 - 
+   ========================================================================== */
+#news-inside-image-banner .h48p{
+    padding: 39px 0 39px 0;
+}
+/* Heading 2 - 
+   ========================================================================== */
+#careers-section-three h2{
+    padding:68px 0 48px 0;
+}
+/* Heading 3 - 
+   ========================================================================== */
+#homepage-text-banner h3{
+	padding:85px 0 85px 0;
+}
+.news-content h3{
+    padding:52px 0 32px 0;
+} 
+/* Heading 4 - 
+   ========================================================================== */
+#homepage-section-four h4,
+#engine-section-four h4,
+#engine-section-five h4,
+#careers-section-three h4{
+    margin: auto;
+    padding:60px 0 60px 0;
+}
+#landscape-content h4{
+    max-width:none;
+}
+/* Heading 5 - 
+   ========================================================================== */
+#homepage-section-one h5{
+    padding-bottom: 40px;
+}
+#about-section-two h5{
+	padding:105px 0 0 0;
+    text-align: center;
+}
+/* Heading 6 - 
+   ========================================================================== */
+#engine-section-two .h30p{
+	height:100%;
+    display:table-cell;
+    vertical-align:middle;
+}
+/* Headings - Other
+   ========================================================================== */
+#homepage-section-one .ipad .h16p{
+    padding-top: 0px;
+}
+#homepage-section-one .h16p{
+    padding-top: 74px;
+}
+}
